@@ -1,0 +1,23 @@
+# dependencies
+node_modules/
+
+# environment variables
+.env
+
+# macOS
+.DS_Store
+
+# logs
+logs
+*.log
+
+# build files
+dist/
+build/
+
+# prisma
+prisma/dev.db
+
+# IDE
+.vscode/
+.idea/
