@@ -4,6 +4,7 @@ const helmet = require("helmet");
 const morgan = require("morgan");
 
 const productRoutes = require("./routes/productRoutes");
+const authRoutes = require("./routes/authRoutes");
 
 
 const errorMiddleware = require("./middleware/errorMiddleware");
@@ -26,6 +27,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/products", productRoutes);
+app.use("/api/auth", authRoutes);
 
 app.use(notFoundMiddleware);
 app.use(errorMiddleware);
